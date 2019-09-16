@@ -1,0 +1,16 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/lazarus/Área de Trabalho/UFV/2_Semestre/AEDS1/tp1/main.c
+stdio.h
+-
+stdlib.h
+-
+string.h
+-
+
