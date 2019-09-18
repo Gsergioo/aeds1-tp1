@@ -123,6 +123,33 @@ tp1/fast:
 	$(MAKE) -f CMakeFiles/tp1.dir/build.make CMakeFiles/tp1.dir/build
 .PHONY : tp1/fast
 
+Lista.o: Lista.c.o
+
+.PHONY : Lista.o
+
+# target to build an object file
+Lista.c.o:
+	$(MAKE) -f CMakeFiles/tp1.dir/build.make CMakeFiles/tp1.dir/Lista.c.o
+.PHONY : Lista.c.o
+
+Lista.i: Lista.c.i
+
+.PHONY : Lista.i
+
+# target to preprocess a source file
+Lista.c.i:
+	$(MAKE) -f CMakeFiles/tp1.dir/build.make CMakeFiles/tp1.dir/Lista.c.i
+.PHONY : Lista.c.i
+
+Lista.s: Lista.c.s
+
+.PHONY : Lista.s
+
+# target to generate assembly for a file
+Lista.c.s:
+	$(MAKE) -f CMakeFiles/tp1.dir/build.make CMakeFiles/tp1.dir/Lista.c.s
+.PHONY : Lista.c.s
+
 main.o: main.c.o
 
 .PHONY : main.o
@@ -159,6 +186,9 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... tp1"
 	@echo "... edit_cache"
+	@echo "... Lista.o"
+	@echo "... Lista.i"
+	@echo "... Lista.s"
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"

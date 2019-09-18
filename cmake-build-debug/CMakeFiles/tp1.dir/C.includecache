@@ -6,6 +6,20 @@
 
 #IncludeRegexTransform: 
 
+/home/lazarus/Área de Trabalho/UFV/2_Semestre/AEDS1/tp1/Compra.h
+
+/home/lazarus/Área de Trabalho/UFV/2_Semestre/AEDS1/tp1/Lista.c
+Lista.h
+/home/lazarus/Área de Trabalho/UFV/2_Semestre/AEDS1/tp1/Lista.h
+stdlib.h
+-
+stdio.h
+-
+
+/home/lazarus/Área de Trabalho/UFV/2_Semestre/AEDS1/tp1/Lista.h
+Compra.h
+/home/lazarus/Área de Trabalho/UFV/2_Semestre/AEDS1/tp1/Compra.h
+
 /home/lazarus/Área de Trabalho/UFV/2_Semestre/AEDS1/tp1/main.c
 stdio.h
 -
@@ -13,4 +27,6 @@ stdlib.h
 -
 string.h
 -
+Lista.h
+/home/lazarus/Área de Trabalho/UFV/2_Semestre/AEDS1/tp1/Lista.h
 

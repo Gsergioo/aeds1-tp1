@@ -3,7 +3,10 @@
 #include <string.h>
 
 
+#include "Lista.h"
+
 int main() {
+    /*
     char nomeArq[25];
     char tam[100], auxiliar[100];
     int opcao = 0;
@@ -73,14 +76,7 @@ int main() {
         }
 
         fscanf(arq, "%d, %d", &linhas, &colunas);
-        /*
-        strcpy(c, strsep(auxiliar, ", "));
-        strtok(c, ", "); //funciona como split
-        linhas = atoi(c);
-        strcat(c, ", ");
-        strtok(auxiliar, c);
-        colunas = atoi(auxiliar);
-        */
+
         printf("Linhas: %d\n", linhas);
         printf("Colunas: %d\n", colunas);
 
@@ -90,5 +86,19 @@ int main() {
         fclose(arq);
 
     }while(opcao >= 0);
+     */
+
+    TLista *plista = NULL;
+    TLista lista;
+    plista = &lista;
+    FLVazia(plista);
+    printf("%d\n", EhVazia(plista));
+    printf("pLinha %p\n", plista->pLinha);
+    printf("pColuna %p\n", plista->pColuna);
+    printf("lista %p\n", plista);
+    printf("direita %p\n", plista->pLinha->direita);
+    printf("baixo %p\n", plista->pLinha->baixo);
+
+    LImprime(plista);
     return 0;
 }
