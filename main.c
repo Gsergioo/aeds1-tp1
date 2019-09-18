@@ -92,7 +92,7 @@ int main() {
     TLista lista;
     plista = &lista;
     FLVazia(plista);
-    printf("%d\n", EhVazia(plista));
+//    printf("%d\n", EhVazia(plista));
     printf("pLinha %p\n", plista->pLinha);
     printf("pColuna %p\n", plista->pColuna);
     printf("lista %p\n", plista);
