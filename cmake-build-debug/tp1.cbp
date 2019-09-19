@@ -78,13 +78,16 @@
 				</MakeCommands>
 			</Target>
 		</Build>
+		<Unit filename="/home/lazarus/Área de Trabalho/UFV/2_Semestre/AEDS1/tp1/Compra.c">
+			<Option target="tp1"/>
+		</Unit>
 		<Unit filename="/home/lazarus/Área de Trabalho/UFV/2_Semestre/AEDS1/tp1/Compra.h">
 			<Option target="tp1"/>
 		</Unit>
-		<Unit filename="/home/lazarus/Área de Trabalho/UFV/2_Semestre/AEDS1/tp1/Lista.c">
+		<Unit filename="/home/lazarus/Área de Trabalho/UFV/2_Semestre/AEDS1/tp1/Matriz.c">
 			<Option target="tp1"/>
 		</Unit>
-		<Unit filename="/home/lazarus/Área de Trabalho/UFV/2_Semestre/AEDS1/tp1/Lista.h">
+		<Unit filename="/home/lazarus/Área de Trabalho/UFV/2_Semestre/AEDS1/tp1/Matriz.h">
 			<Option target="tp1"/>
 		</Unit>
 		<Unit filename="/home/lazarus/Área de Trabalho/UFV/2_Semestre/AEDS1/tp1/main.c">

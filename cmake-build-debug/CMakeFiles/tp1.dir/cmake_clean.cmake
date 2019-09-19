@@ -1,6 +1,7 @@
 file(REMOVE_RECURSE
   "CMakeFiles/tp1.dir/main.c.o"
-  "CMakeFiles/tp1.dir/Lista.c.o"
+  "CMakeFiles/tp1.dir/Matriz.c.o"
+  "CMakeFiles/tp1.dir/Compra.c.o"
   "tp1.pdb"
   "tp1"
 )

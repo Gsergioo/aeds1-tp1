@@ -123,32 +123,59 @@ tp1/fast:
 	$(MAKE) -f CMakeFiles/tp1.dir/build.make CMakeFiles/tp1.dir/build
 .PHONY : tp1/fast
 
-Lista.o: Lista.c.o
+Compra.o: Compra.c.o
 
-.PHONY : Lista.o
+.PHONY : Compra.o
 
 # target to build an object file
-Lista.c.o:
-	$(MAKE) -f CMakeFiles/tp1.dir/build.make CMakeFiles/tp1.dir/Lista.c.o
-.PHONY : Lista.c.o
+Compra.c.o:
+	$(MAKE) -f CMakeFiles/tp1.dir/build.make CMakeFiles/tp1.dir/Compra.c.o
+.PHONY : Compra.c.o
 
-Lista.i: Lista.c.i
+Compra.i: Compra.c.i
 
-.PHONY : Lista.i
+.PHONY : Compra.i
 
 # target to preprocess a source file
-Lista.c.i:
-	$(MAKE) -f CMakeFiles/tp1.dir/build.make CMakeFiles/tp1.dir/Lista.c.i
-.PHONY : Lista.c.i
+Compra.c.i:
+	$(MAKE) -f CMakeFiles/tp1.dir/build.make CMakeFiles/tp1.dir/Compra.c.i
+.PHONY : Compra.c.i
 
-Lista.s: Lista.c.s
+Compra.s: Compra.c.s
 
-.PHONY : Lista.s
+.PHONY : Compra.s
 
 # target to generate assembly for a file
-Lista.c.s:
-	$(MAKE) -f CMakeFiles/tp1.dir/build.make CMakeFiles/tp1.dir/Lista.c.s
-.PHONY : Lista.c.s
+Compra.c.s:
+	$(MAKE) -f CMakeFiles/tp1.dir/build.make CMakeFiles/tp1.dir/Compra.c.s
+.PHONY : Compra.c.s
+
+Matriz.o: Matriz.c.o
+
+.PHONY : Matriz.o
+
+# target to build an object file
+Matriz.c.o:
+	$(MAKE) -f CMakeFiles/tp1.dir/build.make CMakeFiles/tp1.dir/Matriz.c.o
+.PHONY : Matriz.c.o
+
+Matriz.i: Matriz.c.i
+
+.PHONY : Matriz.i
+
+# target to preprocess a source file
+Matriz.c.i:
+	$(MAKE) -f CMakeFiles/tp1.dir/build.make CMakeFiles/tp1.dir/Matriz.c.i
+.PHONY : Matriz.c.i
+
+Matriz.s: Matriz.c.s
+
+.PHONY : Matriz.s
+
+# target to generate assembly for a file
+Matriz.c.s:
+	$(MAKE) -f CMakeFiles/tp1.dir/build.make CMakeFiles/tp1.dir/Matriz.c.s
+.PHONY : Matriz.c.s
 
 main.o: main.c.o
 
@@ -186,9 +213,12 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... tp1"
 	@echo "... edit_cache"
-	@echo "... Lista.o"
-	@echo "... Lista.i"
-	@echo "... Lista.s"
+	@echo "... Compra.o"
+	@echo "... Compra.i"
+	@echo "... Compra.s"
+	@echo "... Matriz.o"
+	@echo "... Matriz.i"
+	@echo "... Matriz.s"
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"

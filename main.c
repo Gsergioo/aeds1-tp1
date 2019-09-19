@@ -3,7 +3,7 @@
 #include <string.h>
 
 
-#include "Lista.h"
+#include "Matriz.h"
 
 int main() {
     /*
@@ -88,17 +88,17 @@ int main() {
     }while(opcao >= 0);
      */
 
-    TLista *plista = NULL;
-    TLista lista;
-    plista = &lista;
-    FLVazia(plista);
-//    printf("%d\n", EhVazia(plista));
-    printf("pLinha %p\n", plista->pLinha);
-    printf("pColuna %p\n", plista->pColuna);
-    printf("lista %p\n", plista);
-    printf("direita %p\n", plista->pLinha->direita);
-    printf("baixo %p\n", plista->pLinha->baixo);
+    TMatriz *pMatriz = NULL;
+    TMatriz matriz;
+    pMatriz = &matriz;
+    FMatVazia(pMatriz);
+//    printf("%d\n", EhVazia(pMatriz));
+    printf("pLinha %p\n", pMatriz->pLinha);
+    printf("pColuna %p\n", pMatriz->pColuna);
+    printf("lista %p\n", pMatriz);
+    printf("direita %p\n", pMatriz->pLinha->direita);
+    printf("baixo %p\n", pMatriz->pLinha->baixo);
 
-    LImprime(plista);
+    LImprime(pMatriz);
     return 0;
 }
