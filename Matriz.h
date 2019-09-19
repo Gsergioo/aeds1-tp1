@@ -13,7 +13,7 @@ typedef struct{
 }TMatriz;
 
 
-void FMatVazia(TMatriz *pLista);
+void FMatVazia(int i, int j, TMatriz *pLista);
 void LInsere(TMatriz *pLista, TCompra *compra, int i, int j);
 void LImprime(TMatriz *pLista);
 void quantidadeCompraPorProduto(TMatriz *pMatriz);

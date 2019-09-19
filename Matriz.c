@@ -3,7 +3,7 @@
 #include <stdlib.h>
 #include <stdio.h>
 
-void FMatVazia(TMatriz *pLista){
+void FMatVazia(int lin, int col, TMatriz *pLista){
         pLista->pLinha = (TCelula*) malloc(sizeof(TCelula));
         pLista->pLinha->linha = -1;
         pLista->pLinha->coluna = -1;
@@ -12,7 +12,7 @@ void FMatVazia(TMatriz *pLista){
         pLista->pLinha->baixo = pLista->pColuna;
 
     TCelula *aux = pLista->pColuna;
-    for (int i = 0; i < 4; ++i) {
+    for (int i = 0; i < lin; ++i) {
         aux->direita = malloc(sizeof(TCelula));
         aux = aux->direita;
         aux->direita = pLista->pColuna;
@@ -21,7 +21,7 @@ void FMatVazia(TMatriz *pLista){
     }
 
     aux = pLista->pLinha;
-    for (int j = 0; j < 4; ++j) {
+    for (int j = 0; j < col; ++j) {
         aux->baixo = malloc(sizeof(TCelula));
         aux = aux->baixo;
         aux->baixo = pLista->pLinha;
@@ -46,7 +46,9 @@ void LInsere(TMatriz *pLista, TCompra *compra, int i, int j){
     aux = aux->direita;
     aux->direita = aux2;
     aux->linha = i;
-    //aux->chave = 10;
+    //if(VerificaIniciou(&aux->compras) == 0)
+        iniciaLista(&aux->compras);
+    alocaCelulaCompra(compra, &aux->compras);
     aux3 = aux;
     aux = pLista->pLinha;
     for (int colunas = 0; colunas < j; colunas++){
@@ -64,7 +66,6 @@ void LInsere(TMatriz *pLista, TCompra *compra, int i, int j){
 
 void LImprime(TMatriz *pMatriz){
     TCelula *aux = NULL;
-    //pMatriz->pLinha = pMatriz->pLinha->baixo;
     aux = pMatriz->pLinha->baixo;
     while(1){
         aux = aux->direita;
@@ -72,8 +73,10 @@ void LImprime(TMatriz *pMatriz){
             aux = aux->baixo;
         }
 
-        else
-            printf("Cliente: %d ; Produto: %d ; Ender: %p\n", aux->linha, aux->coluna, aux);
+        else {
+            printf("Cliente: %d ; Produto: %d \n", aux->linha, aux->coluna);
+            imprimeCompras(&aux->compras);
+        }
         if(aux == pMatriz->pColuna){
             break;
         }

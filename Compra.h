@@ -19,4 +19,4 @@ void iniciaLista(TListaDeCompra *lista);
 void alocaCelulaCompra(TCompra *compra, TListaDeCompra *pLista);
 void imprimeCompras(TListaDeCompra *lista);
 int somaQtdCompras(TListaDeCompra *lista);
-
+int VerificaIniciou(TListaDeCompra *lista);

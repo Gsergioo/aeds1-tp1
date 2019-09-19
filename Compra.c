@@ -20,10 +20,10 @@ void iniciaLista(TListaDeCompra *lista){
     lista->pUlt->pProx = NULL;
 }
 
-void imprimeLista(TListaDeCompra *lista){
+void imprimeCompras(TListaDeCompra *lista){
     TCelulaCompra *aux = lista->pPrim->pProx;
     while (aux != NULL){
-        printf("Quantidade: %d ; Data: %s", aux->compra.quantidade, aux->compra.data);
+        printf("Quantidade: %d ; Data: %s\n", aux->compra.quantidade, aux->compra.data);
         aux = aux->pProx;
     }
 }
@@ -37,4 +37,11 @@ int somaQtdCompras(TListaDeCompra *lista){
     }
 
     return soma;
+}
+
+int VerificaIniciou(TListaDeCompra *lista){
+    if( lista->pUlt->pProx == NULL){
+        return 0;
+    } else
+        return 1;
 }

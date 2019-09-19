@@ -91,7 +91,8 @@ int main() {
     TMatriz *pMatriz = NULL;
     TMatriz matriz;
     pMatriz = &matriz;
-    FMatVazia(pMatriz);
+    TCompra compra;
+    FMatVazia(4, 4, pMatriz);
 //    printf("%d\n", EhVazia(pMatriz));
     printf("pLinha %p\n", pMatriz->pLinha);
     printf("pColuna %p\n", pMatriz->pColuna);
@@ -99,6 +100,23 @@ int main() {
     printf("direita %p\n", pMatriz->pLinha->direita);
     printf("baixo %p\n", pMatriz->pLinha->baixo);
 
+
+    strcpy(compra.data, "15/02/2001");
+    compra.quantidade = 10;
+    LInsere(pMatriz, &compra, 1, 1);
+    strcpy(compra.data, "20/09/2019");
+    compra.quantidade = 40;
+    LInsere(pMatriz, &compra, 1, 2);
+    strcpy(compra.data, "30/02/2119");
+    compra.quantidade = 40;
+    LInsere(pMatriz, &compra, 1, 3);
+    strcpy(compra.data, "10/12/0019");
+    compra.quantidade = 40;
+    LInsere(pMatriz, &compra, 1, 3);
     LImprime(pMatriz);
+
+    printf("%d\n", somaQtdCompras(&matriz.pLinha->compras));
+
+   // LImprime(pMatriz);
     return 0;
 }
