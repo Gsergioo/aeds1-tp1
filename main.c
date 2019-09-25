@@ -22,7 +22,8 @@ int main() {
         printf("| [2] Exibir Matriz Completa                     |\n");
         printf("| [3] Exibir Quantidade de Compras por Cliente   |\n");
         printf("| [4] Exibir Quantidade de Compras por Produto   |\n");
-        printf("| [5] Sair                                       |\n");
+        printf("| [5] Alunos                                     |\n");
+        printf("| [6] Sair                                       |\n");
         printf("--------------------------------------------------\n");
         printf("Opção: ");
         scanf("%d", &opcao);
@@ -61,8 +62,14 @@ int main() {
                     printf("\nInsira o nome do arquivo primeiro!\n");
             break;
             case (5):
+                printf("\n +++ ALUNOS: +++\n");
+                printf("Lázaro Izidoro Bodevan Maia - 3861\n");
+                printf("Guilherme Sérigio de Souza - 3854\n");
+                break;
+            case (6):
                 printf("------------- FIM!! -------------");
-                fclose(arq);
+                if(arq != NULL)
+                    fclose(arq);
                 return 0;
             default:
                 printf("Opcao Invalida");

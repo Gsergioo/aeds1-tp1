@@ -68,6 +68,7 @@ void ImprimeMatriz(TMatriz *pMatriz){
         if (aux->linha == -1)
             aux = aux->baixo;
         else{
+            printf("------------------------\n");
             printf("Cliente: %d ; Produto: %d\n", aux->linha, aux->coluna);
             ImprimeCompras(&(aux->compras));
         }
